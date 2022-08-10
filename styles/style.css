@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #403d55;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p,
+li,
+a,
+label,
+button {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.872rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.328rem;
+}
+
+h6 {
+  font-size: 1.072rem;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fas {
+  pointer-events: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+  padding: 3rem;
+}
+
+.header h1 {
+  font-family: "Dancing Script", cursive;
+  color: white;
+  letter-spacing: 0.2rem;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.beatmaker-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 0 3rem 3rem #4e4e4e;
+          box-shadow: 0 0 3rem 3rem #4e4e4e;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white;
+}
+
+.slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 0 2rem;
+}
+
+.tempo-slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #7f8083;
+  width: 100%;
+  height: 0.8rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.tempo-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  height: 2rem;
+  width: 2rem;
+  background-color: #403d55;
+  border-radius: 50%;
+}
+
+.tempo-num {
+  font-size: 1.6rem;
+}
+
+.clear-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background-color: #7f8083;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.clear-btn .fa-times-circle {
+  margin-right: 0.7rem;
+}
+
+.clear-btn:hover {
+  background-color: #b30000;
+}
+
+.track-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: white;
+}
+
+.track-img {
+  position: relative;
+}
+
+.track-img img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.popup {
+  position: absolute;
+  bottom: 0;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  visibility: hidden;
+}
+
+.track-img:hover .popup {
+  visibility: visible;
+}
+
+#kick-select {
+  margin: 0 2rem;
+}
+
+#snare-select {
+  margin: 0 2rem;
+}
+
+#hihat-select {
+  margin: 0 2rem;
+}
+
+.pad {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 1rem;
+  background-color: #7f8083;
+  margin: 0 0.3rem;
+}
+
+.pad.active {
+  background-color: #03c75b;
+}
+
+.btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.play-btn {
+  background-color: #403d55;
+  border-radius: 5rem;
+  height: 5rem;
+  width: 5rem;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.stop-btn {
+  color: #403d55;
+  margin-left: 2rem;
+  font-size: 3rem;
+  display: none;
+}
+
+.play-btn:hover {
+  -webkit-box-shadow: 0 0 3rem 0.5rem #4e4e4e;
+          box-shadow: 0 0 3rem 0.5rem #4e4e4e;
+}
+
+@-webkit-keyframes activepad {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes activepad {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=style.css.map */

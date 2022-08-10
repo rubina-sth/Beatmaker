@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p,
+li,
+a,
+label,
+button {
+  font-size: $text;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: $header1;
+}
+
+h2 {
+  font-size: $header2;
+}
+
+h3 {
+  font-size: $header3;
+}
+
+h4 {
+  font-size: $header4;
+}
+
+h5 {
+  font-size: $header5;
+}
+
+h6 {
+  font-size: $header6;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.fas {
+  pointer-events: none;
+}
