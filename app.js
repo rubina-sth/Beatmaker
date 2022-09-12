@@ -181,4 +181,4 @@ beat.tempoSlider.addEventListener('input', function(e){
     beat.changeTempo(e);
 })
 
-
+// This is just for testing purpose!
